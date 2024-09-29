@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+}
+
+.text-container {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  position: relative;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.reveal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #666;
+}
